@@ -1,0 +1,2 @@
+dropuser:
+    user.absent

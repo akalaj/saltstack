@@ -22,6 +22,6 @@ fi
 
 echo "Pulling salt files from GitHub..."
 
-wget https://raw.githubusercontent.com/akalaj/saltstack/master/wordpress/init.sls -O /srv/salt/init.sls
+wget https://raw.githubusercontent.com/akalaj/saltstack/master/wordpress/top.sls -O /srv/salt/top.sls
 wget https://raw.githubusercontent.com/akalaj/saltstack/master/wordpress/percona.sls -O /srv/salt/bin/percona.sls
 wget https://raw.githubusercontent.com/akalaj/saltstack/master/wordpress/wordpress.sls -O /srv/salt/bin/wordpress.sls

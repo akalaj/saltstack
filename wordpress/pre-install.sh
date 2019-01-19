@@ -11,12 +11,14 @@ if [[ ! -d "/srv/salt" ]]; then
 else
 	echo "'/srv/salt' exists"
 done;
+fi
 
 if [[ ! -d "/srv/salt/bin" ]]; then
 	mkdir /srv/salt/bin
 else
 	echo "'/srv/salt/bin' exists"
 done;
+fi
 
 echo "Pulling salt files from GitHub..."
 

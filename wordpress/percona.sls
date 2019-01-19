@@ -4,5 +4,6 @@ percona:
   pkg.installed:
     - name: Percona-Server-server-57
   service.running:
+    - name: mysql
     - enable: True
     - reload: True

@@ -4,7 +4,7 @@ yum update
 
 yum install epel-release -y
 
-yum install salt-minion -y
+yum install salt-minion salt-master -y
 
 if [[ ! -d "/srv/salt" ]]; then
 	echo "Creating '/srv/salt'"

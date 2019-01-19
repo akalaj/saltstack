@@ -7,12 +7,14 @@ yum install epel-release -y
 yum install salt-minion -y
 
 if [[ ! -d "/srv/salt" ]]; then
+	echo "Creating '/srv/salt'"
 	mkdir /srv/salt
 else
 	echo "'/srv/salt' exists"
 fi
 
 if [[ ! -d "/srv/salt/bin" ]]; then
+	echo "Creating '/srv/salt/bin'"
 	mkdir /srv/salt/bin
 else
 	echo "'/srv/salt/bin' exists"

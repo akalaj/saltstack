@@ -21,8 +21,8 @@ else
 fi
 
 #Verify that salt directory exists (salt was properly installed). Exit 1 if ! exist.
-if [[ ! -d "/etc/salt/minion" ]]; then
-	echo -e "'/etc/salt/minion' directory does not exist!!!\nPlease check that package salt-minion was successfully installed\nExiting abnormally..."
+if [[ ! -d "/etc/salt/" ]]; then
+	echo -e "'/etc/salt/' directory does not exist!!!\nPlease check that package salt-minion was successfully installed\nExiting abnormally..."
 	exit 1
 fi
 

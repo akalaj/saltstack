@@ -30,6 +30,7 @@ fi
 if [[ -f "/etc/salt/minion" ]]; then
 	echo "Removing minion file so we can replace it with modified standalone config"
 	rm -f /etc/salt/minion
+fi
 
 echo "Pulling salt files from GitHub..."
 

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#check if salt-master is running
+
+if [[ $(pgrep salt-master | wc -l) < 1 ]]; then
+	salt-master -d
+else
+	sed "s|localhost$|saltmaster.example.com localhost|g" /etc/hosts
+fi

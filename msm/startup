@@ -4,7 +4,7 @@
 
 if [[ $(pgrep salt-master | wc -l) < 1 ]]; then
 	salt-master -d
-	sed "s|localhost$|saltmaster.example.com localhost|g" /etc/hosts
+	curl -sS https://raw.githubusercontent.com/akalaj/saltstack/master/msm/hosts | cat >> /etc/hosts
 else
-	sed "s|localhost$|saltmaster.example.com localhost|g" /etc/hosts
+	curl -sS https://raw.githubusercontent.com/akalaj/saltstack/master/msm/hosts | cat >> /etc/hosts
 fi
